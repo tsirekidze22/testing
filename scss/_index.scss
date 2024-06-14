@@ -1,0 +1,199 @@
+body {
+  font-family: "Alegreya", serif;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 30px 110px 0px 110px;
+  margin-bottom: 0px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(62, 134, 218, 1) 100%
+  );
+  // overflow: hidden;
+
+  header {
+    padding: 0px 0px 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-items {
+      display: flex;
+      column-gap: 50px;
+      align-items: center;
+      a {
+        font-size: 25px;
+        color: rgb(32, 35, 196);
+      }
+    }
+    .nav-list {
+      display: flex;
+      column-gap: 50px;
+    }
+    .contact_us {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 40px;
+      cursor: pointer;
+      font-size: 19px;
+      border-radius: 7px;
+      color: #fff;
+      background-color: #58c06d;
+      border: none;
+    }
+
+    .burger-icon {
+      display: none;
+      width: 20px;
+      height: 20px;
+    }
+    .logo {
+      border-radius: 20px;
+    }
+  }
+  .main-sec {
+    display: flex;
+    column-gap: 100px;
+    width: 100%;
+    height: 460px;
+    align-items: center;
+
+    .text h1 {
+      font-size: 100px;
+      font-weight: 500;
+      color: black;
+      opacity: 70%;
+    }
+    p {
+      font-size: 25px;
+      font-weight: 500;
+      color: purple;
+    }
+    .pict {
+      max-height: 60%;
+      height: 60%;
+      img {
+        transition: 0.5s linear;
+        max-height: 120%;
+        border-radius: 20px;
+      }
+      img:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+  .geolab-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 150px;
+    column-gap: 15px;
+
+    .geolab-logo {
+      border-radius: 25px;
+      background-color: purple;
+    }
+    .geolab-insta {
+      border-radius: 25px;
+    }
+    .geolab-linkedin {
+      border-radius: 10px;
+    }
+    .contact-2 {
+      flex-basis: 100%;
+
+      h3 {
+        color: rgb(26, 27, 26);
+        font-size: 30px;
+      }
+
+      tr td:first-child {
+        padding-right: 10px;
+        color: rgb(46, 54, 51);
+      }
+      tr td:last-child {
+        color: rgb(52, 40, 94);
+      }
+      tr td {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  body {
+    header {
+      align-items: center;
+
+      .nav-items {
+        display: none;
+      }
+      .nav-list {
+        display: none;
+      }
+      .burger-icon {
+        display: block;
+        margin-left: auto;
+        cursor: pointer;
+      }
+    }
+
+    .logo {
+      width: 30px;
+      height: 30px;
+    }
+
+    .main-sec {
+      flex-direction: column-reverse;
+      text-align: center;
+
+      .text h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+      .pict {
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        img {
+          height: 200px;
+          width: 200px;
+        }
+      }
+    }
+
+    .geolab-contact {
+      // flex-direction: column-reverse;
+      display: flex;
+      padding-top: 10px;
+
+      .contact-2 {
+        font-size: 10px;
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .geolab-logo {
+        width: 30px;
+        height: 30px;
+      }
+      .geolab-insta {
+        width: 30px;
+        height: 30px;
+      }
+      .geolab-fb {
+        width: 30px;
+        height: 30px;
+      }
+      .geolab-linkedin {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

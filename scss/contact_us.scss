@@ -1,0 +1,79 @@
+body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 4%,
+    rgba(252, 176, 69, 1) 74%
+  );
+  font-size: 20px;
+}
+.main-container {
+  h1 {
+    font-size: 50px;
+    color: black;
+  }
+  p {
+    margin-top: 20px;
+  }
+
+  .contact-box {
+    .contact-1 {
+      flex-basis: 60%;
+      padding: 20px;
+      background: #ffffff;
+      margin-top: 20px;
+      border-radius: 25px;
+    }
+    .input-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .input-row .input-group {
+      flex-basis: 30%;
+
+      label {
+        color: coral;
+      }
+    }
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid rgb(131, 58, 180);
+      padding: 7px;
+    }
+
+    textarea {
+      width: 100%;
+      border: 1px solid rgb(131, 58, 180);
+      outline: none;
+      padding: 25px;
+      margin-top: 10px;
+    }
+    label {
+      color: coral;
+    }
+    .send-btn {
+      width: 65px;
+      height: 35px;
+      margin-top: 10px;
+      color: chartreuse;
+      border-radius: 25px;
+      background-color: rgb(221, 30, 205);
+      border: none;
+      cursor: pointer;
+      box-shadow: 0px 5px 10px 0px black;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main-container {
+    h1 {
+      font-size: 20px;
+    }
+    .contact-1 {
+      font-size: 15px;
+    }
+  }
+}

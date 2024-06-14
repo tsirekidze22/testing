@@ -1,0 +1,33 @@
+body {
+  background: rgb(65, 54, 110);
+  background: radial-gradient(
+    circle,
+    rgba(65, 54, 110, 1) 0%,
+    rgba(54, 0, 55, 1) 0%,
+    rgba(99, 185, 51, 1) 31%,
+    rgba(54, 0, 55, 1) 36%,
+    rgba(92, 157, 63, 1) 51%,
+    rgba(65, 54, 110, 1) 94%,
+    rgba(91, 155, 64, 1) 100%
+  );
+
+  .gallery {
+    padding: 1rem 4%;
+
+    .img-container {
+      columns: 18.1rem 3;
+      gap: 0.5rem;
+
+      img {
+        transition: 0.3s linear;
+        border-radius: 25px;
+        width: 350px;
+        height: 300px;
+        margin-bottom: 1rem;
+      }
+      img:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
